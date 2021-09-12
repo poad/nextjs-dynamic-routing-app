@@ -33,3 +33,10 @@ yarn create next-app --example dynamic-routing dynamic-routing-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## Run with Nginx on Docker
+
+```bash
+docker build -t nginx -f nginx/Dockerfile .
+docker run --rm --name nginx -p 80:80 -it -d nginx
+```
