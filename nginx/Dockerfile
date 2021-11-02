@@ -1,8 +1,8 @@
-FROM nginx:alpine AS base
+FROM nginx:latest AS base
 
 COPY nginx/assets/etc/nginx /etc/nginx
 
-FROM node:lts-alpine AS builder-base
+FROM node:lts-slim AS builder-base
 
 RUN mkdir -p /work/app/
 
