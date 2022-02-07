@@ -63,9 +63,9 @@
   integrity sha512-oUIWRKd24jFLRWUYO1CZmML5+32BcpVfqhimGaaZIXcOkfQW+iqiAzdqsv688zaGtyKGeB9ZtiK3NDf+Q0v+Vw==
 
 caniuse-lite@^1.0.30001283:
-  version "1.0.30001307"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001307.tgz#27a67f13ebc4aa9c977e6b8256a11d5eafb30f27"
-  integrity sha512-+MXEMczJ4FuxJAUp0jvAl6Df0NI/OfW1RWEE61eSmzS7hw6lz4IKutbhbXendwq8BljfFuHtu26VWsg4afQ7Ng==
+  version "1.0.30001308"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001308.tgz#8ee68bbf226ce429297d4328977dfe0c312dd0a4"
+  integrity sha512-cUXbmSTlfG54vdGeA7guriSSAmzyxMWoHNN/DzQWbaLkDlcxrTu0Ox+dA4f8J8/SDXes00oC6iTx+watQYoVfA==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
