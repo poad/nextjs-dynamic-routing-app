@@ -2,20 +2,15 @@ FROM nginx:latest AS base
 
 COPY nginx/assets/etc/nginx /etc/nginx
 
-FROM node:lts-slim AS builder-base
+FROM node:lts-slim AS builder
 
-RUN mkdir -p /work/app/
+RUN npm -g i pnpm
 
-WORKDIR /work/app/
-COPY ./package.json /work/app/package.json
-RUN yarn install
+COPY app /work/app
+WORKDIR /work/app
 
-FROM builder-base AS builder
-
-WORKDIR /work/app/
-COPY ./components /work/app/components
-COPY ./pages /work/app/pages
-RUN yarn run build
+RUN pnpm install\
+ && pnpm build
 
 FROM base
 
