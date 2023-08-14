@@ -15,8 +15,7 @@ FROM builder-base AS builder
 WORKDIR /work/app/
 COPY ./components /work/app/components
 COPY ./pages /work/app/pages
-RUN yarn run build \
- && yarn run export
+RUN yarn run build
 
 FROM base
 
