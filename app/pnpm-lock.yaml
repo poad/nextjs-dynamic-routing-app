@@ -115,8 +115,8 @@ packages:
       streamsearch: 1.1.0
     dev: false
 
-  /caniuse-lite@1.0.30001526:
-    resolution: {integrity: sha512-0UAJj+6ga1IzMcKB6PbNPEXuIpYffmiZL6Innn03+3fX1lm8P70cfAHzD7jekkYj+lMs5vB1iWCRXf3fS1GW8A==}
+  /caniuse-lite@1.0.30001527:
+    resolution: {integrity: sha512-YkJi7RwPgWtXVSgK4lG9AHH57nSzvvOp9MesgXmw4Q7n0C3H04L0foHqfxcmSAm5AcWb8dW9AYj2tR7/5GnddQ==}
     dev: false
 
   /client-only@0.0.1:
@@ -166,7 +166,7 @@ packages:
       '@next/env': 13.4.19
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001526
+      caniuse-lite: 1.0.30001527
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
