@@ -23,17 +23,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - uses: pnpm/action-setup@v4
-      name: Install pnpm
-      id: pnpm-install
-      with:
-        version: latest
-        run_install: |
-          - recursive: true
-            cwd: ./app
-            args: [--no-frozen-lockfile]
-        package_json_file: ./app/package.json
-
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -42,6 +32,15 @@ jobs:
         cache-dependency-path:  |
           app/pnpm-lock.yaml
 
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        run_install: |
+          - recursive: true
+            cwd: ./app
+            args: [--no-frozen-lockfile]
+        package_json_file: ./app/package.json    
+    
     - name: build
       working-directory: app
       run: pnpm build
