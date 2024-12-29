@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -38,6 +38,8 @@ jobs:
             args: [--no-frozen-lockfile]
         package_json_file: ./app/package.json    
     
+    - uses: oven-sh/setup-bun@v2
+
     - name: build
       working-directory: app
-      run: pnpm build
+      run: bun run --bun build
