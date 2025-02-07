@@ -19,8 +19,8 @@ importers:
         version: 19.0.0(react@19.0.0)
     devDependencies:
       pnpm:
-        specifier: ^10.2.0
-        version: 10.2.0
+        specifier: ^10.2.1
+        version: 10.2.1
 
 packages:
 
@@ -249,8 +249,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  pnpm@10.2.0:
-    resolution: {integrity: sha512-DSc2TgE5xqre7WWtoVMTXgypbI2kISO9UAR/lhM53Hp1j8LpRLQo9SvlcNG9M3JFXBxl+i56oL+/kxGQ+VUgAQ==}
+  pnpm@10.2.1:
+    resolution: {integrity: sha512-OYA1x71pbQugsQpojtVYKFMp0n6plIBKUrrZFn2OOnK8uZP5aZWF08old5rGSUnvQidXpsMRAsEquTLly+XMkg==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -483,7 +483,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  pnpm@10.2.0: {}
+  pnpm@10.2.1: {}
 
   postcss@8.4.31:
     dependencies:
