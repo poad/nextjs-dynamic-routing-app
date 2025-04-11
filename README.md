@@ -1,3 +1,5 @@
+Move to <https://github.com/poad/next-examples/tree/main/nextjs-dynamic-routing-app>
+
 # Dynamic Routing example
 
 This example shows how to do [dynamic routing](https://nextjs.org/docs/routing/dynamic-routes) in Next.js. It contains two dynamic routes:
